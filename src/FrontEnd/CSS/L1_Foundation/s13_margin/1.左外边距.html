@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 1 : 左外边距
+属性: margin-left
+值：数字
+指的是元素边框和元素边框之间的距离
+
+注：像span这样的内联元素，默认情况下，只有左右外边距，没有上下外边距。 为了观察上下外边距的效果，可以采用块级元素，比如div.
+-->
+
+<style>
+    .red{
+        border:1px solid red;
+        background-color:green;
+    }
+
+    .margin{
+        border:1px solid red;
+        background-color:green;
+        margin-left:10px;
+    }
+
+</style>
+
+<span class="red"> 无外边距的span  </span>
+<span class="red"> 无外边距的span  </span>
+
+<br/>
+
+<span class="red"> 无外边距的span  </span>
+<span class="margin"> 有左外边距的span  </span>
+
+
+</body>
+</html>

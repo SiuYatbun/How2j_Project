@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 1 : 相对定位
+属性：position
+值： relative
+与绝对定位不同的是，相对定位不会把该元素从原文档删除掉，而是在原文档的位置的基础上，移动一定的距离
+-->
+
+<style>
+    p.r{
+        position: relative;
+        left: 150px;
+        top: 50px;
+    }
+
+</style>
+
+<p >正常文字1</p>
+<p >正常文字2</p>
+<p class="r" >相对定位的文字3</p>
+<p >正常文字4</p>
+<p >正常文字5</p>
+
+
+</body>
+</html>

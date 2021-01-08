@@ -1,0 +1,25 @@
+<input type="radio" > 表示单选框
+
+
+示例 1 : 单选框
+两个单选，都可以同时选中。 为了达到，同一时间，只能选中其一的效果，需要使用分组
+
+单选1 <input type="radio" >
+单选2 <input type="radio" >
+
+
+示例 2 : 默认选中
+
+默认选中 <input type="radio" checked="checked" >
+
+
+示例 3 : 分组
+分组即，多个单选框，都在一个分组里，同一时间，只能选中一个单选框
+设置name属性相同即可
+
+<p>今天晚上做什么？</p>
+
+学习java<input type="radio" name="activity" value="学习java" > <br/>
+东京热<input type="radio" checked="checked"  name="activity" value="tokyohot" > <br/>
+dota<input type="radio" name="activity" value="dota" > <br/>
+LOL<input type="radio" name="activity"  value="lol"> <br/>

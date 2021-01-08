@@ -1,0 +1,31 @@
+<input type="image" > 即使用图像作为按钮进行form的提交
+
+
+示例 1 : 使用图像进行提交
+设置src属性
+
+注： 这里用到了服务端技术JSP，将在后续JSP章节讲解 Hello JSP,有兴趣的可以先点击查看login.jsp的源代码： login.jsp
+
+<form action="/study/login.jsp">
+账号：<input type="text" name="name"> <br/>
+密码：<input type="password" name="password" > <br/>
+<input type="image" src="https://how2j.cn/example.gif">
+</form>
+
+
+示例 2 : login.jsp
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" isELIgnored="false"%>
+
+<%
+    request.setCharacterEncoding("UTF-8");
+    String name = request.getParameter("name");
+    String password = request.getParameter("password");
+
+%>
+
+您提交的账号名是 :<%=name%> <br/>
+您提交的密码是 :<%=password%>
+<br>
+<a href="javascript:history.back()">返回</a>

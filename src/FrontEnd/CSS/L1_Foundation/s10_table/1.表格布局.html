@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 1 : 表格布局
+属性:table-layout
+auto; 单元格的大小由td的 内容宽度 决定
+fixed; 单元格的大小由td上 设置的宽度 决定
+注：只对连续的英文字母起作用，如果使用中文就看不到效果
+-->
+
+<style>
+    table.t1{
+        table-layout:auto;
+    }
+
+    table.t2{
+        table-layout:fixed;
+    }
+
+</style>
+
+<table class="t1" border="1" width="100%">
+    <tr>
+        <td width="5%">abcdefghijklmnopqrstuvwxyz</td>
+        <td width="95%">abc</td>
+    </tr>
+</table>
+
+<table class="t2" border="1" width="100%">
+    <tr>
+        <td width="50px">abcdefghijklmnopqrstuvwxyz</td>
+        <td >abc</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

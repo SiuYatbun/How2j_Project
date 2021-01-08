@@ -1,0 +1,120 @@
+和字体相关的属性
+
+关键字	        简介
+font-size	    尺寸
+font-style	    风格
+font-weight	    粗细
+font-family	    字库
+font        	声明在一起
+
+
+示例 1 : 尺寸
+属性：font-size
+值：数字或者百分比
+
+<style>
+p.big{
+  font-size:30px;
+}
+
+p.small{
+  font-size:50%;
+}
+
+p.small2{
+  font-size:0.5em;
+}
+</style>
+
+<p >正常大小</p>
+<p class="big">30px大小的文字</p>
+<p class="small">50%比例的文字</p>
+<p class="small2">0.5em 等同于 50%比例的文字</p>
+
+
+示例 2 : 风格
+font-style:
+normal 标准字体
+italic 斜体
+
+<style>
+p.n{
+  font-style:normal;
+}
+
+p.i{
+  font-style:italic;
+}
+</style>
+
+<p >标准字体</p>
+<p class="n">标准字体</p>
+<p class="i">斜体</p>
+
+
+示例 3 : 粗细
+属性 font-weight
+normal 标准粗细
+bold 粗一点
+
+<style>
+p.n{
+  font-weight:normal;
+}
+p.b{
+  font-weight:bold;
+}
+</style>
+
+<p >标准字体</p>
+<p class="n">标准字体</p>
+<p class="b">粗一点</p>
+
+
+示例 4 : 字库
+属性font-family
+
+<style>
+p.f1{
+  font-family:"Times New Roman";
+}
+
+p.f2{
+  font-family:Arial;
+}
+p.f3{
+  font-family:宋体;
+}
+p.f4{
+  font-family:黑体;
+}
+p.f5{
+  font-family:楷体;
+}
+p.f6{
+  font-family:微软雅黑;
+}
+</style>
+
+<p >默认字库 font family:default </p>
+<p class="f1">设置字库 font-family: Times New Roman</p>
+<p class="f2">设置字库 font-family: Arial</p>
+<p class="f3">设置字库 font-family: 宋体, 这种字体是IE默认字体</p>
+<p class="f4">设置字库 font-family: 黑体</p>
+<p class="f5">设置字库 font-family: 楷体</p>
+<p class="f6">设置字库 font-family: 微软雅黑, 这个字体是火狐默认字体</p>
+
+
+示例 5 : 声明在一起
+把大小，风格，粗细，字库都写在一行里面
+
+<style>
+p.all{
+   font:italic bold 30px "Times New Roman";
+}
+
+</style>
+
+<p>默认字体</p>
+
+<p class="all">斜体的 粗体的 大小是30px的 "Times New Roman" </p>

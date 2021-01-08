@@ -1,0 +1,31 @@
+<button></button>即按钮标签
+与<input type="button">不同的是，<button>标签功能更为丰富
+
+按钮标签里的内容可以是文字
+也可以是图像
+
+如果button的type=“submit” ，那么它就具备提交form的功能
+
+
+示例 1 : button里是文字
+
+<button>按钮</button>
+
+
+示例 2 :button里是图片
+
+<button><img src="https://how2j.cn/example.gif"/></button>
+
+
+示例 3 : 提交数据
+设置type="submit"
+IE下button的type的默认值为button不具备提交功能
+其他浏览器type的默认值是submit
+
+<form action="/study/login.jsp">
+账号：<input type="text" name="name"> <br/>
+密码：<input type="password" name="password" > <br/>
+
+<button type="submit">登陆</button>
+
+</form>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+步骤 2 : 解决办法
+使用float来解决。
+float使用完毕之后，记得在下面加上 <div style="clear:both"></div> 用于使得后续的元素，不会和这些span重复在一起
+-->
+
+<style>
+    div.nocontinue span{
+        border-bottom:2px solid lightgray;
+        float:left;
+    }
+</style>
+
+<div class="nocontinue">
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+</div>
+
+<div style="clear:both"></div>
+
+<div>后续的内容</div>
+
+
+</body>
+</html>

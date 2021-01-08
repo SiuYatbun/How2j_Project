@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 5 : 背景平铺
+属性：background-size
+值：contain
+ -->
+
+<style>
+    div#contain
+    {
+        background-image:url(background_small.jpg);
+        width:200px;
+        height:100px;
+        background-size: contain;
+    }
+</style>
+
+<div id="contain">
+    背景平铺，通过拉伸实现，会有失真
+</div>
+
+</body>
+</html>

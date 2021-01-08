@@ -1,0 +1,27 @@
+步骤 1 : 一个div始终贴在下方
+首先把蓝色div设置为相对定位
+
+然后把内部的绿色div设置为绝对定位， bottom: 0表示贴在下面
+
+<style>
+#div1
+        {
+            position: relative;
+            height: 300px;
+            width: 90%;
+            background-color: skyblue;
+        }
+        #div2
+        {
+            position: absolute;
+            bottom: 0;
+            height: 30px;
+            width: 100%;
+            background-color: lightgreen;
+        }
+    </style>
+
+<div id="div1">
+    <div id="div2"> 无论蓝色div高度如何变化，绿色div都会贴在下面
+    </div>
+</div>

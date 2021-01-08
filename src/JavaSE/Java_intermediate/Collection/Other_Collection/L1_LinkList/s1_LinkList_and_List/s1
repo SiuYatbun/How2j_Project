@@ -1,0 +1,4 @@
+与ArrayList一样，LinkedList也实现了List接口，诸如add,remove,contains等等方法。
+详细使用，请参考 ArrayList 常用方法，在此不作赘述。
+
+接下来要讲的是LinkedList的一些特别的地方

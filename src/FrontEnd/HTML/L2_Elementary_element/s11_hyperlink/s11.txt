@@ -1,0 +1,28 @@
+<a>标签即用来显示超链
+
+完整元素是：
+<a href="跳转到的页面地址">超链显示文本</a>
+
+
+示例 1 : 超链
+
+<a href="http://www.12306.com">12306</a>
+
+
+示例 2 : 在新的页面打开超链
+新增属性target
+
+<a href="http://www.12306.cn" target="_blank">http://www.12306.cn</a>
+
+
+示例 3 : 超链上的提示文字
+当鼠标放在超链上的时候，就会弹出提示文字
+
+<a href="http://www.12306.com" title="跳转到http://www.12306.com">www.12306.com</a>
+
+
+示例 4 : 使用图片作为超链
+
+<a href="http://www.12306.com">
+<img src="https://how2j.cn/example.gif"/>
+</a>

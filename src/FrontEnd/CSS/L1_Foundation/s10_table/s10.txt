@@ -1,0 +1,73 @@
+表格相关样式
+
+
+关键字	                                 简介
+table-layout:automatic|fixed	        表格布局
+border-collapse:separate|collapse	    表格边框
+
+
+示例 1 : 表格布局
+属性:table-layout
+automatic; 单元格的大小由td的内容宽度决定
+fixed; 单元格的大小由td上设置的宽度决定
+注：只对连续的英文字母起作用，如果使用中文就看不到效果
+
+<style>
+table.t1{
+  table-layout:automatic;
+}
+
+table.t2{
+  table-layout:fixed;
+}
+
+</style>
+
+<table class="t1" border="1" width="100%">
+   <tr>
+      <td width="10%">abcdefghijklmnopqrstuvwxyz</td>
+      <td width="90%">abc</td>
+   </tr>
+</table>
+
+<table class="t2" border="1" width="100%">
+   <tr>
+      <td width="50px">abcdefghijklmnopqrstuvwxyz</td>
+      <td >abc</td>
+   </tr>
+</table>
+
+
+示例 2 : 表格边框
+属性：border-collapse
+值：
+separate:边框分隔
+collapse:边框合并
+
+<style>
+table.t1{
+  border-collapse:separate;
+}
+
+table.t2{
+   border-collapse:collapse;
+}
+
+</style>
+
+<table class="t1" border="1" width="200px">
+   <tr>
+      <td width="50%">边框分离</td>
+      <td width="50%">边框分离</td>
+   </tr>
+</table>
+
+<br/>
+<br/>
+
+<table class="t2" border="1" width="200px">
+   <tr>
+      <td width="50%">边框合并</td>
+      <td width="50%">边框合并</td>
+   </tr>
+</table>

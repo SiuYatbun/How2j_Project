@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 4 : z-index
+通过绝对定位可以把一个元素放在另一个元素上，这样位置就重复了。
+
+重复了，就存在一个谁掩盖谁的问题。 这个时候就可以使用
+
+z-index属性， 当z-index的值越大，就表示放上面，z-index:越小就表示放下面。
+-->
+
+<style>
+    img#i1{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        z-index:1;
+    }
+
+    img#i2{
+        position: absolute;
+        left: 60px;
+        top: 120px;
+        z-index:-1;
+    }
+
+</style>
+
+<div>
+    <p >正常文字a</p>
+    <p >正常文字b</p>
+    <p >正常文字c</p>
+    <p >正常文字d</p>
+    <p >正常文字e</p>
+    <p >正常文字f</p>
+    <p >正常文字g</p>
+</div>
+
+<img id="i1" src="https://how2j.cn/example.gif" />
+<img id="i2" src="https://how2j.cn/example.gif" />
+
+
+</body>
+</html>

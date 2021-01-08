@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 1 : 背景颜色
+属性名background-color
+颜色的值可以采用3种方式
+1. 预定义的颜色名字
+比如red,gray,white,black,pink，参考颜色速查手册
+2. rgb格式
+分别代表红绿蓝的比例 rgb(250,0,255) 即表示红色是满的，没有绿色，蓝色是满的，即红色和蓝色混合在一起：紫色
+3. 16进制的表示
+#00ff00 等同于 rgb(0,255,0)
+-->
+
+<style>
+    p.gray {background-color: gray;}
+    h1 {background-color: transparent}
+    h2 {background-color: rgb(250,0,255)}
+    h3 {background-color: #00ff00}
+
+</style>
+
+<p class="gray">灰色</p>
+<h1>透明背景，默认即透明背景</h1>
+<h2>紫色</h2>
+<h3>绿色背景</h3>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 2 : 文字向左浮动
+文字向左浮动
+首先，向左浮动后，会把“坑”让出来，这个时候"正常的文字4“ 就会过来试图占这个坑，但是，发现 “浮动的文字”并没有走，结果，就只好排在它后面了
+-->
+
+<style>
+    .f{
+        float:left;
+    }
+
+</style>
+
+<div >正常文字1</div>
+<div >正常文字2</div>
+<div class="f">浮动的文字</div>
+<div >正常文字4</div>
+<div >正常文字5</div>
+
+
+</body>
+</html>

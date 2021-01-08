@@ -1,0 +1,17 @@
+步骤 1 : 左侧固定，右边自动占满
+
+<style>
+ .left{
+   width:200px;
+   float:left;
+   background-color:pink
+  }
+  .right{
+    overflow:hidden;
+    background-color:lightskyblue;
+  }
+</style>
+
+<div class="left">左边固定宽度</div>
+
+<div class="right">右边自动填满</div>

@@ -1,0 +1,45 @@
+<img> 即图像标签
+需要设置其属性 src指定图像的路径
+
+
+示例 1 : 显示图像
+
+<img src="https://how2j.cn/example.gif"/>
+
+
+示例 2 : 同级目录图像
+如果是本地文件，只需把图片放在同一个目录下即可
+src直接使用文件名，不需要/
+
+
+示例 3 : 上级目录图像
+图片在上级目录，则在src上加上 ../，即可访问上级目录的图片
+如果是在上级目录的上级目录，则使用 ../../
+
+
+示例 4 : 其他目录图像
+src使用图片所在的绝对路径，并在前面加上file://
+
+
+示例 5 : 设置图像的大小
+如果设置的大小比原图片大，则会产生失真效果
+
+<img width="200" height="200" src="https://how2j.cn/example.gif"/>
+
+
+示例 6 : 图像居中
+img不能够自己居中，需要放在其他能够居中的标签中实现这个效果，比如h1标签,p标签.
+经常采用的手段是放在div中居中
+关于div,请参考 块
+
+<div align="left">
+  <img src="https://how2j.cn/example.gif"/>
+</div>
+
+<div align="center">
+  <img src="https://how2j.cn/example.gif"/>
+</div>
+
+<div align="right">
+  <img src="https://how2j.cn/example.gif"/>
+</div>

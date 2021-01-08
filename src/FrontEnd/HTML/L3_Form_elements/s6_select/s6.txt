@@ -1,0 +1,41 @@
+<select> 即下拉列表
+需要配合<option>使用
+
+
+示例 1 : 下拉列表
+
+<select >
+ <option >苍老师</option>
+ <option >高树玛利亚</option>
+ <option >遥美</option>
+</select>
+
+
+示例 2 : 设置高度
+使用属性size
+
+<select  size="2">
+ <option >苍老师</option>
+ <option >高树玛利亚</option>
+ <option >遥美</option>
+</select>
+
+
+示例 3 : 设置可以多选
+使用ctrl或者shift进行多选
+
+<select size="3" multiple="multiple">
+ <option >苍老师</option>
+ <option >高树玛利亚</option>
+ <option >遥美</option>
+</select>
+
+
+示例 4 : 默认选中
+对option元素设置selected="selected" 属性
+
+<select size="3" multiple="multiple">
+ <option >苍老师</option>
+ <option selected="selected">高树玛利亚</option>
+ <option selected="selected">遥美</option>
+</select>

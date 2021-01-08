@@ -1,0 +1,23 @@
+隐藏元素有两种方式：
+1.display:none;
+2.visibility:hidden;
+
+示例 1 : 隐藏
+使用display:none; 隐藏一个元素，这个元素将不再占有原空间 “坑” 让出来了
+使用 visibility:hidden;隐藏一个元素，这个元素继续占有原空间，只是“看不见”
+
+<style>
+div.d{
+  display:none;
+}
+
+div.v{
+  visibility:hidden;
+}
+</style>
+
+<div>可见的div1</div>
+<div class="d">隐藏的div2,使用display:none隐藏</div>
+<div>可见的div3</div>
+<div class="v">隐藏的div4,使用visibility:hidden隐藏</div>
+<div>可见的div5</div>

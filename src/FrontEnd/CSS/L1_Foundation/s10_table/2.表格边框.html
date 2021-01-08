@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 2 : 表格边框
+属性：border-collapse
+值：
+separate:边框分隔
+collapse:边框合并
+-->
+
+<style>
+    table.t1{
+        border-collapse:separate;
+    }
+
+    table.t2{
+        border-collapse:collapse;
+    }
+
+</style>
+
+<table class="t1" border="1" width="200px">
+    <tr>
+        <td width="50%">边框分离</td>
+        <td width="50%">边框分离</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+<table class="t2" border="1" width="200px">
+    <tr>
+        <td width="50%">边框合并</td>
+        <td width="50%">边框合并</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+<table border="1" width="200px">
+    <tr>
+        <td width="50%">默认</td>
+        <td width="50%">默认</td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

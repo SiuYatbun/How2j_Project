@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 5 : 水平排列div
+默认的div排列是会换行的
+如果使用float就可以达到水平排列的效果，通常会用在菜单，导航栏等地方
+如果超出了父容器，还会有自动换行的效果
+-->
+
+<style>
+    div#floatingDiv{
+            width:200px;
+    }
+    div#floatingDiv div{
+        float:left;
+    }
+</style>
+默认的div排列是会换行的
+
+<div>
+    菜单1
+</div>
+<div>
+    菜单2
+</div>
+<div>
+    菜单3
+</div>
+
+如果使用float就可以达到水平排列的效果，通常会用在菜单，导航栏等地方
+
+如果超出了父容器，还会有自动换行的效果
+
+<div id="floatingDiv">
+    <div>
+        菜单1
+    </div>
+    <div>
+        菜单2
+    </div>
+    <div>
+        菜单3
+    </div>
+    <div>
+        菜单4
+    </div>
+    <div>
+        菜单5
+    </div>
+    <div>
+        菜单6
+    </div>
+</div>
+
+
+</body>
+</html>

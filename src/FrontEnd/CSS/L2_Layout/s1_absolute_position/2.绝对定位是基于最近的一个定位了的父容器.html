@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 2 : 绝对定位是基于最近的一个定位了的父容器
+对于 "绝对定位的文字" 这个p，其定位了的父容器即 class="absdiv" 的div
+所以 "绝对定位的文字" 这个p 出现的位置是以这个div 为基础的
+-->
+
+<style>
+    p.abs{
+        position: absolute;
+        left: 100px;
+        top: 50px;
+    }
+    .absdiv{
+        position: absolute;
+        left: 150px;
+        top: 50px;
+        width:215px;
+        border: 1px solid blue;
+    }
+</style>
+
+<div>
+    <p >正常文字a</p>
+    <p >正常文字b</p>
+    <p >正常文字c</p>
+    <p >正常文字d</p>
+    <p >正常文字e</p>
+    <p >正常文字f</p>
+    <p >正常文字g</p>
+</div>
+
+<div class="absdiv">
+    这是一个定位了的div
+    <p class="abs" >绝对定位的文字</p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+如果style.css中，<style>标签中，style属性上有冲突的样式，那么谁的优先级更高？
+
+
+示例 1 : style标签与外部文件style.css样式重复
+外部文件style.css的内容是
+
+.p1{
+  color:red;
+}
+.span1{
+  color:blue;
+}
+
+
+同时style标签中也有一个.p1
+那么优先使用： 最后出现的一个
+
+<link rel="stylesheet" type="text/css" href="https://how2j.cn/study/style.css" />
+
+<style>
+.p1{
+  color:green;
+}
+</style>
+
+<p class="p1">p1 颜色是绿色，优先使用靠的最后出现的</p>
+
+
+示例 2 : style标签上的与style属性冲突
+style标签上的与style属性冲突
+优先使用style属性
+
+<style>
+.p1{
+  color:green;
+}
+</style>
+
+<p class="p1" style="color:red">p1 颜色是红色，优先使用style属性</p>
+
+
+示例 3 : !important
+如果样式上增加了!important，则优先级最高，甚至高于style属性
+
+<style>
+.p1{
+  color:green !important;
+}
+
+</style>
+
+<p class="p1" style="color:red">p1 颜色是绿色，优先使用!important样式</p>

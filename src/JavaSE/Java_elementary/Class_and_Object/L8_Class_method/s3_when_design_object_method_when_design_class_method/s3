@@ -1,0 +1,21 @@
+如果在某一个方法里，调用了对象属性，比如
+
+    public String getName(){
+    	return name;
+    }
+
+
+name属性是对象属性，只有存在一个具体对象的时候，name才有意义。
+如果方法里访问了对象属性，那么这个方法，就必须设计为对象方法
+
+如果一个方法，没有调用任何对象属性，那么就可以考虑设计为类方法，比如
+
+    public static void printGameDuration(){
+    	System.out.println("已经玩了10分50秒");
+    }
+
+
+printGameDuration 打印当前玩了多长时间了，不和某一个具体的英雄关联起来，所有的英雄都是一样的。
+这样的方法，更带有功能性色彩，就像取随机数一样，random()是一个功能用途的方法
+
+Math.random()

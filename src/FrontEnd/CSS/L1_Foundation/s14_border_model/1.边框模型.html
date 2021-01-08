@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 1 : 边框模型
+真正决定一个元素的表现形式，是由其边框模型决定的
+由图所示
+蓝色框即为内容
+width:70px 表示内容的大小
+红色框即为边框
+内容到边框之间的距离，即为内边距 5px
+灰色框，是指边框与其他元素之间的距离，即为外边距：10px
+-->
+
+<style>
+    .box{
+        width:70px;
+        padding:5px;
+        margin: 10px;
+    }
+
+    div{
+        border:1px solid gray;
+        font-size:70%;
+    }
+</style>
+
+<div>
+    其他元素
+</div>
+
+<div class="box">
+    内容宽度70px <br><br>
+    内边距：5px <br> <br>
+    外边距：10px <br>
+</div>
+
+<div>
+    其他元素
+</div>
+
+</body>
+</html>

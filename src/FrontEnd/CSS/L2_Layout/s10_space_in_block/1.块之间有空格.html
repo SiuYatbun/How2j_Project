@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+如果多个span连续编写，像这样：
+
+<span>连续的span</span><span>连续的span</span>
+
+
+是不会有空格的
+但是真正开发代码的时候，一般不会连续书写span,而是不同的span之间有回车换行，比如这样：
+
+<span>有换行的span</span>
+<span>有换行的span</span>
+<span>有换行的span</span>
+
+而这样编写代码，就会导致<span>之间出现空格
+-->
+
+<style>
+    span{
+        border-bottom:2px solid lightgray;
+    }
+</style>
+
+<div class="continue">
+    <span>连续的span</span><span>连续的span</span><span>连续的span</span><span>连续的span</span>
+</div>
+<div class="nocontinue">
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<input type="password"> 即表示密码框
+
+
+示例 1 : 密码框
+输入的数据会自动显示为星号
+
+<input type="password">

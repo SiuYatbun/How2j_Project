@@ -1,0 +1,26 @@
+在使用TableModel之前，是使用
+
+String[] columnNames =。。。
+String[][] heros = 。。。
+JTable t = new JTable(heros, columnNames);
+
+这样的风格创建一个JTable的
+所以实际上调用的是如下的构造方法：
+
+JTable(Object[][] rowData, Object[] columnNames)
+
+如下所示，在JTable的的源代码中，它就会根据rowData和columnNames去创建一个TableModel对象
+
+public JTable(final Object[][] rowData, final Object[] columnNames) {
+        this(new AbstractTableModel() {
+            public String getColumnName(int column) { return columnNames[column].toString(); }
+            public int getRowCount() { return rowData.length; }
+            public int getColumnCount() { return columnNames.length; }
+            public Object getValueAt(int row, int col) { return rowData[row][col]; }
+            public boolean isCellEditable(int row, int column) { return true; }
+            public void setValueAt(Object value, int row, int col) {
+                rowData[row][col] = value;
+                fireTableCellUpdated(row, col);
+            }
+        });
+    }

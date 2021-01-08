@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="datepicker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/datepicker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/swingx-core-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/jar/datepicker.jar!/" />
+    </SOURCES>
+  </library>
+</component>

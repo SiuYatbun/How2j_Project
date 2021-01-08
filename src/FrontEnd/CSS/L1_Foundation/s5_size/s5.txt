@@ -1,0 +1,25 @@
+设置元素的尺寸
+
+
+示例 1 : 尺寸大小
+属性：width
+值：可以是百分比或者像素
+为了便于观察一个元素的大小设置效果，进行了背景色的设置
+
+
+<style>
+p#percentage{
+  width:50%;
+  height:50%;
+  background-color:pink;
+}
+p#pix{
+  width:180px;
+  height:50px;
+  background-color:green;
+}
+</style>
+
+<p id="percentage"> 按比例设置尺寸50%宽 50%高</p>
+
+<p id="pix"> 按象素设置尺寸  180px宽 50 px高</p>

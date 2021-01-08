@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 4 : 文字不想围绕图片
+不允许出现浮动元素
+属性:clear
+值: left right both none
+如果p左边出现了浮动的元素，如此例，则设置clear:left 即达到不允许浮动元素出现在左边的效果
+-->
+
+<style>
+    .f{
+        float:left;
+    }
+
+    div{
+        width:320px;
+    }
+
+    .clearp{
+        clear:left;
+    }
+
+</style>
+
+<div >
+    <img  class="f" src="https://how2j.cn/example.gif"/>
+
+    <p>  当图片浮动时，文字围绕着图片
+        当图片浮动时，文字围绕着图片
+        当图片浮动时，文字围绕着图片
+        当图片浮动时，文字围绕着图片
+        当图片浮动时，文字围绕着图片
+    </p>
+</div>
+
+<div >
+    <img  class="f" src="https://how2j.cn/example.gif"/>
+
+    <p class="clearp">  当图片浮动时，文字却不想围绕图片
+        当图片浮动时，文字却不想围绕图片
+        当图片浮动时，文字却不想围绕图片
+        当图片浮动时，文字却不想围绕图片
+
+    </p>
+</div>
+
+
+</body>
+</html>

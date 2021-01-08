@@ -1,0 +1,53 @@
+<form>用于向服务器提交数据，比如账号密码
+
+
+示例 1 : 表单
+action="/study/login.jsp" 表示把账号和密码提交到login.jsp这个页面去
+
+注: 这里把数据提交到服务端的login.jsp去了，鉴于当前学习的进度，就不对JSP的内容展开了。 JSP的内容可以到JSP章节进行学习
+注: 有好奇的同学可以参考图片中的login.jsp
+
+<form action="https://how2j.cn/study/login.jsp">
+账号：<input type="text" name="name"> <br/>
+密码：<input type="password" name="password" > <br/>
+<input type="submit" value="登陆">
+</form>
+
+
+示例 2 : method="get"
+使用method="get" 提交数据 是常用的提交数据的方式
+如果form元素没有提供method属性， 默认 就是get方式提交数据
+get方式的一个特点就是，可以在浏览器的地址栏看到提交的参数，即便是密码也看得到
+
+<form method="get" action="https://how2j.cn/study/login.jsp">
+账号：<input type="text" name="name"> <br/>
+密码：<input type="password" name="password" > <br/>
+<input type="submit" value="登陆">
+</form>
+
+
+示例 3 : method="post"
+使用method="post" 也可以提交数据
+post不会在地址栏显示提交的参数
+如果要提交二进制数据，比如上传文件，必须采用post方式
+
+<form method="post" action="https://how2j.cn/study/login.jsp">
+账号：<input type="text" name="name"> <br/>
+密码：<input type="password" name="password" > <br/>
+<input type="submit" value="登陆">
+</form>
+
+
+示例 4 : get和post的区别
+
+get
+是form默认的提交方式
+如果通过一个超链访问某个地址，是get方式
+如果在地址栏直接输入某个地址，是get方式
+提交数据会在浏览器显示出来
+不可以用于提交二进制数据，比如上传文件
+
+post
+必须在form上通过 method="post" 显示指定
+提交数据不会在浏览器显示出来
+可以用于提交二进制数据，比如上传文件

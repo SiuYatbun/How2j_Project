@@ -1,0 +1,54 @@
+如果把所有的css都写在html文件里面，一旦样式比较多的时候，就会显得不易维护
+这个时候就会选择把所有的css内容，放在一个独立文件里
+然后在html中引用该文件
+通常这个文件会被命名为style.css
+
+示例 1 : 直接在html里面写样式
+样式代码写在style标签里
+
+<style>
+.p1{
+  color:red;
+}
+
+.span1{
+  color:blue;
+}
+</style>
+
+<p class="p1">红色</p>
+
+<span class="span1">蓝色</span>
+
+
+示例 2 : 把样式代码写在style.css，并在html中包含它
+创建一个文件叫style.css
+其内容为
+
+.p1{
+  color:red;
+}
+.span1{
+  color:blue;
+}
+
+
+然后在html中包含该文件
+<link rel="stylesheet" type="text/css" href="/study/style.css" />
+
+注：style.css文件里，就不要再使用style标签了
+
+
+<link rel="stylesheet" type="text/css" href="https://how2j.cn/study/style.css" />
+
+<p class="p1">红色</p>
+
+<span class="span1">蓝色</span>
+
+
+示例 3 : css是本地文件 如何包含
+在测试的时候，大家写的css文件都是放在本地的，比如d:/style.css
+这时就应该写成
+href="file://d:/style.css"
+
+

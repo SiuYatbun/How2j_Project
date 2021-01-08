@@ -1,0 +1,18 @@
+中文乱码问题
+可以在浏览器上设置编码方式为GB2312
+或者在html的最前面加上编码设置
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+</head>
+
+
+这样就能告诉浏览器使用GB2312方式显示中文
+如果 GB2312不行，就用UTF-8
+
+
+示例 1 : 中文问题
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+</head>
+<p>中文</p>

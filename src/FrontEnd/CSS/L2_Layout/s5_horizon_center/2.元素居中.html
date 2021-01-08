@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<style>
+    div{
+        border: solid 1px lightgray;
+        margin: 10px;
+    }
+    span{
+        border: solid 1px lightskyblue;
+    }
+</style>
+
+<div> 默认情况下div会占用100%的宽度,所以无法观察元素是否居中</div>
+
+<div style="width:300px;margin:0 auto">
+    设置本div的宽度，然后再使用样式 margin: 0 auto来使得元素居中</div>
+
+<span style="width:300px;margin:0 auto">
+  span 是内联元素，无法设置宽度，所以不能通过margin:0 auto居中</span>
+
+<div style="text-align:center">
+    <span>span的居中可以通过放置在div中，然后让div text-align实现居中</span>
+</div>
+
+
+</body>
+</html>

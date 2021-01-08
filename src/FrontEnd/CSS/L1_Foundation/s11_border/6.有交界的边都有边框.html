@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 6 : 有交界的边都有边框
+比如上和左就是有交界的，而上和下就没有交界
+
+当有交界的边同时出现边框的时候，就会以倾斜的形式表现交界线。
+-->
+
+<style>
+    div.lefttop{
+        width:150px;
+        height:150px;
+
+        border-top-style:solid;
+        border-top-color:red;
+        border-top-width: 50px;
+
+        border-left-style:solid;
+        border-left-color:blue;
+        border-left-width: 50px;
+
+        background-color:lightgray;
+    }
+
+    div.alldirection{
+        width:150px;
+        height:150px;
+
+        border-top-style:solid;
+        border-top-color:red;
+        border-top-width: 50px;
+
+        border-left-style:solid;
+        border-left-color:blue;
+        border-left-width: 50px;
+
+        border-bottom-style:solid;
+        border-bottom-color:green;
+        border-bottom-width: 50px;
+
+        border-right-style:solid;
+        border-right-color:yellow;
+        border-right-width: 50px;
+
+        background-color:lightgray;
+    }
+</style>
+
+<div class="lefttop">
+    左边和上边都有边框
+</div>
+<br>
+
+<div class="alldirection">
+    四边都有边框　
+</div>
+
+
+</body>
+</html>

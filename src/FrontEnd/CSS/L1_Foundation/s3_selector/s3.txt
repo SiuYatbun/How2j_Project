@@ -1,0 +1,78 @@
+选择器主要分3种：
+1.元素选择器
+2.id选择器
+3.类选择器
+
+
+示例 1 : 元素选择器
+元素选择器通过标签名选择元素
+在实例中，所有的p都被设置成红色
+
+<style>
+p{
+  color:red;
+}
+</style>
+
+<p>p元素</p>
+<p>p元素</p>
+<p>p元素</p>
+
+
+示例 2 : id选择器
+通过id选择元素
+注： 一个元素的id应该是唯一的。另一个元素不应该重复使用
+
+<style>
+p{
+  color:red;
+}
+#p1{
+  color:blue;
+}
+#p2{
+  color:green;
+}
+</style>
+
+<p>没有id的p</p>
+<p id="p1">id=p1的p</p>
+<p id="p2">id=p2的p</p>
+
+
+示例 3 : 类选择器
+当需要多个元素，都使用同样的css的时候，就会使用类选择器
+
+<style>
+.pre{
+  color:blue;
+}
+.after{
+  color:green;
+}
+</style>
+
+<p class="pre">前3个</p>
+<p class="pre">前3个</p>
+<p class="pre">前3个</p>
+
+<p class="after">后3个</p>
+<p class="after">后3个</p>
+<p class="after">后3个</p>
+
+
+示例 4 : 更准确的选择
+同时根据元素名和class来选择
+p.blue
+
+<style>
+
+p.blue{
+  color:blue;
+}
+
+</style>
+
+<p class="blue">class=blue的p</p>
+
+<span class="blue">class=blue的span</span>

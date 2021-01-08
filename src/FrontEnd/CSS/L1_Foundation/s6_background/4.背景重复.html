@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 4 : 背景重复
+background-repeat属性
+值可以选
+repeat; 水平垂直方向都重复
+repeat-x; 只有水平方向重复
+repeat-y; 只有垂直方向重复
+no-repeat; 无重复
+ -->
+
+<style>
+    div#norepeat
+    {
+        background-image:url(background_small.jpg);
+        width:200px;
+        height:100px;
+        background-repeat: no-repeat;
+    }
+
+    div#repeat-x
+    {
+        background-image:url(background_small.jpg);
+        width:200px;
+        height:100px;
+        background-repeat: repeat-x;
+    }
+</style>
+
+<div id="norepeat">
+    背景不重复
+</div>
+
+<div id="repeat-x">
+    背景水平重复
+</div>
+
+
+</body>
+</html>

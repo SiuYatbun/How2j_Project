@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+步骤 2 : 块级
+display:block; 表示块级元素
+块级元素会自动在前面和后面加上换行，并且在其上的width和height也能够生效
+
+div默认是块级元素
+span默认是内联元素(不会有换行,width和height也不会生效)
+-->
+
+<style>
+    div,span{
+        border: 1px solid lightgray;
+        margin:10px;
+        width:200px;
+        height:100px;
+    }
+
+    .d{
+        display:block;
+    }
+</style>
+
+<div>普通的div块</div>
+<span>这是普通span</span> <span>这是普通span</span> <span>这是普通span</span>
+<span class="d">这是span,被改造成了块级元素</span>
+
+
+</body>
+</html>

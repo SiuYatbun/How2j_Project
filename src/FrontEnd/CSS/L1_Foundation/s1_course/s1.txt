@@ -1,0 +1,60 @@
+使用css和不使用比较
+
+
+示例 1 : 不使用css
+不使用css 给每一个单元格加上背景颜色
+就需要给每一个td元素加上bgcolor属性
+
+<table border="1">
+  <tr >
+      <td bgcolor="gray" >1</td>
+      <td bgcolor="gray">2</td>
+  </tr>
+
+  <tr>
+      <td  bgcolor="gray">3</td>
+      <td  bgcolor="gray">4</td>
+  </tr>
+
+  <tr>
+      <td  bgcolor="gray">a</td>
+      <td  bgcolor="gray">b</td>
+  </tr>
+
+</table>
+
+
+示例 2 : 使用css
+使用css 给每一个单元格加上背景颜色
+只需要在最前面写一段css代码，所有的单元格都有背景颜色了
+
+这是一种分层设计的思想，css把和颜色，大小位置等信息剥离到<style>中，而html只用关心提供什么样的内容就行了。
+
+<style>
+td{
+  background-color:gray;
+}
+</style>
+
+<table border="1">
+  <tr >
+      <td>1</td>
+      <td>2</td>
+  </tr>
+
+  <tr>
+      <td>3</td>
+      <td>4</td>
+  </tr>
+
+  <tr>
+      <td>a</td>
+      <td>b</td>
+  </tr>
+
+</table>
+
+
+示例 3 : 不同的td有不同的背景色
+这就涉及到选择器的知识，请看选择器章节
+

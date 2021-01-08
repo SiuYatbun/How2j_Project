@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+步骤 3 :
+display:inline; 表示内联元素
+内联元素前后没有换行，并且在其上的width和height也无效。 其大小由其中的内容决定
+
+div默认是块级元素
+span默认是内联元素
+-->
+
+<style>
+    div,span{
+        border: 1px solid lightgray;
+        margin:10px;
+        width:200px;
+        height:100px;
+    }
+
+    .s{
+        display:inline;
+    }
+</style>
+
+<span>这是普通span</span> <span>这是普通span</span> <span>这是普通span</span>
+
+<div class="s">这是div，被改造成了内联元素</div>
+
+
+</body>
+</html>

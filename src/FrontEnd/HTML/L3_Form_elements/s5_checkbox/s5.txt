@@ -1,0 +1,11 @@
+<input type="checkbox"> 即表示复选框
+
+
+示例 1 : 复选框
+
+<p>今天晚上做什么？</p>
+
+学习java<input type="checkbox" value="学习java" > <br/>
+东京热<input type="checkbox" checked="checked"  name="activity" value="tokyohot" > <br/>
+dota<input type="checkbox" value="dota" > <br/>
+LOL<input type="checkbox" value="lol"> <br/>

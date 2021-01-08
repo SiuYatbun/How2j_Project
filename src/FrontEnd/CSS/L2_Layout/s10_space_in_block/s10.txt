@@ -1,0 +1,51 @@
+步骤 1 : 块之间有空格
+如果多个span连续编写，像这样：
+
+<span>连续的span</span><span>连续的span</span>
+
+
+是不会有空格的
+但是真正开发代码的时候，一般不会连续书写span,而是不同的span之间有回车换行，比如这样：
+
+<span>有换行的span</span>
+<span>有换行的span</span>
+<span>有换行的span</span>
+
+而这样编写代码，就会导致<span>之间出现空格
+
+<style>
+span{
+border-bottom:2px solid lightgray;
+}
+</style>
+
+<div class="continue">
+<span>连续的span</span><span>连续的span</span><span>连续的span</span><span>连续的span</span>
+</div>
+<div class="nocontinue">
+<span>有换行的span</span>
+<span>有换行的span</span>
+<span>有换行的span</span>
+</div>
+
+
+步骤 2 : 解决办法
+使用float来解决。
+float使用完毕之后，记得在下面加上 <div style="clear:both"></div> 用于使得后续的元素，不会和这些span重复在一起
+
+<style>
+div.nocontinue span{
+border-bottom:2px solid lightgray;
+  float:left;
+}
+</style>
+
+<div class="nocontinue">
+<span>有换行的span</span>
+<span>有换行的span</span>
+<span>有换行的span</span>
+</div>
+
+<div style="clear:both"></div>
+
+<div>后续的内容</div>

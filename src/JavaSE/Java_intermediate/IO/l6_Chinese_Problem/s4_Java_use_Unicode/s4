@@ -1,0 +1,9 @@
+写在.java源代码中的汉字，在执行之后，都会变成JVM中的字符。
+而这些中文字符采用的编码方式，都是使用UNICODE. "中"字对应的UNICODE是4E2D,
+所以在内存中，实际保存的数据就是十六进制的0x4E2D, 也就是十进制的20013。
+
+public class TestStream {
+    public static void main(String[] args) {
+        String str = "中";
+    }
+}

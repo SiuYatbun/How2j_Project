@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 1 : style标签与外部文件style.css样式重复
+外部文件style.css的内容是
+
+.p1{
+  color:red;
+}
+.span1{
+  color:blue;
+}
+
+
+同时style标签中也有一个.p1
+那么优先使用： 最后出现的一个
+-->
+<link rel="stylesheet" type="text/css" href="https://how2j.cn/study/style.css" />
+
+<style>
+    .p1{
+        color:green;
+    }
+</style>
+
+<p class="p1">p1 颜色是绿色，优先使用靠的最后出现的</p>
+
+
+</body>
+</html>

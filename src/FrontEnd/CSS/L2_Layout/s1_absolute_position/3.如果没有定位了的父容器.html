@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+示例 3 : 如果没有定位了的父容器
+"绝对定位的文字" 这个p 的父容器div，并没有定位。 所以它的”最近的一个定位了的父容器” 即body
+-->
+
+<style>
+    p.abs{
+        position: absolute;
+        left: 100px;
+        top: 50px;
+    }
+
+</style>
+
+<div>
+    <p >正常文字a</p>
+    <p >正常文字b</p>
+    <p >正常文字c</p>
+    <p >正常文字d</p>
+    <p >正常文字e</p>
+    <p >正常文字f</p>
+    <p >正常文字g</p>
+</div>
+
+<div>
+    这个div没有定位
+    <p class="abs" >绝对定位的文字</p>
+</div>
+
+
+</body>
+</html>

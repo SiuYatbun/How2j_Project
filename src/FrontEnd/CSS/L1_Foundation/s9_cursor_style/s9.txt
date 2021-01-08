@@ -1,0 +1,29 @@
+步骤 1 : 鼠标样式
+
+<style>
+  span{
+    cursor:crosshair;
+  }
+</style>
+
+<span>鼠标移动到这段文字上，就看到鼠标样式变成了十字架</span>
+
+
+步骤 2 : 样式一览
+
+效果	样式
+鼠标移动上来看效果	cursor:default
+鼠标移动上来看效果	cursor:auto
+鼠标移动上来看效果	cursor:crosshair
+鼠标移动上来看效果	cursor:pointer
+鼠标移动上来看效果	cursor:e-resize
+鼠标移动上来看效果	cursor:ne-resize
+鼠标移动上来看效果	cursor:nw-resize
+鼠标移动上来看效果	cursor:n-resize
+鼠标移动上来看效果	cursor:se-resize
+鼠标移动上来看效果	cursor:sw-resize
+鼠标移动上来看效果	cursor:w-resize
+鼠标移动上来看效果	cursor:text
+鼠标移动上来看效果	cursor:wait
+鼠标移动上来看效果	cursor:help
+鼠标移动上来看效果	cursor:not-allowed

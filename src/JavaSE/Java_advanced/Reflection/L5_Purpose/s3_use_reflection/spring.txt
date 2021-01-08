@@ -1,0 +1,2 @@
+class=JavaSE.Java_advanced.Reflection.L5_Purpose.s1_Service_Class.Service1
+method=doService1

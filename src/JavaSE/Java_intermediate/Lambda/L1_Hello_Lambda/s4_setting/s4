@@ -1,0 +1,6 @@
+如果你的eclipse能够正常识别Lambda，那么就可以跳过这个章节了。
+因为Lambda是JDK8的内容，除了JDK需要使用1.8以上版本外(在JDK环境变量配置下载的就是1.8了)，
+还需要在eclipse中把编译器设置为1.8才能够正常识别Lambda.
+
+设置办法：
+菜单->Window->Preferences->Java-Compiler->Compiler compliance leve: 设置为1.8即可

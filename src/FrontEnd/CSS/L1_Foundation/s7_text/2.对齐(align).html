@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+示例 2 : 对齐
+属性:text-align
+值：left,right,center
+div是块级元素，其默认宽度是100%，所以文本有对齐的空间前提。
+
+但是，span却看不出右对齐效果，为什么呢？
+因为span是内联元素其默认宽度就是其文本内容的宽度
+简单说就是文本已经粑在其边框上了，对齐是看不出效果来的
+
+使用了后面的样式风格，让div和span的边框显露出来，便于理解本知识点
+用到了边框和外边距
+-->
+
+<style>
+    div#left{
+        text-align:left;
+    }
+    /*让div和span的边框显露出来，便于理解本知识点*/
+    div,span{
+        border: 1px gray solid;
+        margin:10px;
+    }
+
+    div#right{
+        text-align:right;
+    }
+
+    div#center{
+        text-align:center;
+    }
+
+    span#right{
+        text-align:right;
+    }
+
+</style>
+
+<div id="left">
+    左对齐
+</div>
+
+<div id="right">
+    右对齐
+</div>
+
+<div id="center">
+    居中
+</div>
+
+<span id="right">
+span看不出右对齐效果
+
+</span>
+
+</body>
+</html>

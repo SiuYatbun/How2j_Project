@@ -1,0 +1,39 @@
+超链状态有4种:
+1.link - 初始状态，从未被访问过
+2.visited - 已访问过
+3.hover - 鼠标悬停于超链的上方
+4.active - 鼠标左键点击下去，但是尚未弹起的时候
+
+
+示例 1 : 超链状态
+伪类，所谓的伪类即被选中的元素处于某种状态的时候
+超链状态有4种
+1.link - 初始状态，从未被访问过
+2.visited - 已访问过
+3.hover - 鼠标悬停于超链的上方
+4.active - 鼠标左键点击下去，但是尚未弹起的时候
+
+<style>
+a:link {color: #FF0000}
+a:visited {color: #00FF00}
+a:hover {color: #FF00FF}
+a:active {color: #0000FF}
+</style>
+
+<a href="http://www.12306.com">超链的不同状态</a>
+
+
+示例 2 : 去除超链的下划线
+默认状态下，超链是有下划线的，但是现在网站上的超链普遍采用无下划线风格。
+
+使用 text-decoration: none 文本修饰的样式来解决
+
+<style>
+a.no_underline {text-decoration: none}
+</style>
+
+<a href="http://www.12306.com">默认的超链</a>
+<br>
+<a class="no_underline" href="http://www.12306.com">去除了下划线的超链</a>
+
+
